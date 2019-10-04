@@ -1,0 +1,17 @@
+bitcoin
+litecoin
+ltc
+ethereum
+eth
+zcash
+zec
+dash
+ripple
+xrp
+monero
+xmr
+bch
+neo
+cardano
+ada
+eos
