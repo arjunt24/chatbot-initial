@@ -13,6 +13,7 @@ def find_cur_crypto(words):
 
     # assigns cur_crypto to any crypto found in cryptos
     for word in words:
+        word = word.lower()
         if word in cryptos:
             cur_crypto = word
 
