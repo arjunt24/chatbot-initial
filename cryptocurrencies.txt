@@ -1,7 +1,10 @@
 bitcoin
+btc
+xbt
 litecoin
 ltc
 ethereum
+ether
 eth
 zcash
 zec

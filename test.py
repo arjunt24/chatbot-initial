@@ -8,11 +8,16 @@ def find_cur_crypto(words):
     cur_crypto = ""
     file = open("cryptocurrencies.txt" , "r")
 
+    # creates list of all cryptos from cryptocurrencies.txt
     cryptos = [item.strip() for item in file.readlines()]
 
+    # assigns cur_crypto to any crypto found in cryptos
     for word in words:
         if word in cryptos:
             cur_crypto = word
+
+    if not cur_crypto:
+        cur_crypto = "null"
 
     return cur_crypto;
 
@@ -20,8 +25,10 @@ def find_question(words):
     question = ""
     file = open("price_words.txt" , "r")
 
+    # creates list of all 'price question' indicators from price_words.txt
     price_words = [item.strip() for item in file.readlines()]
 
+    # assigns question to 'price' if a price indicator is found
     for word in words:
         if word in price_words:
             question = "price"
@@ -30,31 +37,27 @@ def find_question(words):
 
 
 if __name__ == '__main__':
+    while True:
+        # takes in input from command line
+        query = input("> ")
+        if query == "q":
+            break;
 
-    input = input("> ")
+        # tokenizes input sentence
+        words = nltk.tokenize.word_tokenize(query)
+        stopWords = set(nltk.corpus.stopwords.words("english"))
+        for word in words:
+            if word in stopWords:
+                words.remove(word)
 
-    #tokenizes input sentence
-    words = nltk.tokenize.word_tokenize(input)
-    stopWords = set(nltk.corpus.stopwords.words("english"))
-    for word in words:
-        if word in stopWords:
-            words.remove(word)
+        cur_crypto = find_cur_crypto(words)
+        question = find_question(words)
 
-    #determines crypto of input
-    cur_crypto = find_cur_crypto(words)
+        # determines default question
+        if not question:
+            if cur_crypto != "null":
+                question = "about"
+            else:
+                question = "off topic"
 
-    #determines question type of input
-    question = find_question(words)
-
-
-    if not question:
-        if not cur_crypto:
-            question = "idk"
-        else:
-            question = "about"
-
-    if not cur_crypto:
-        cur_crypto = "none"
-
-    print("crypto: " + cur_crypto)
-    print ("question type: " + question)
+        print("~ will call '" +  question  + "' function on '" + cur_crypto + "' crypto ~\n")
