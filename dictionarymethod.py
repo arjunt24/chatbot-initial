@@ -73,9 +73,9 @@ if __name__ == '__main__':
                 else:
                     question = "off topic"
 
-            print("~ will call '" +  question  + "' function on '", end = '')
+            print("~ will call '" +  question  + "' function on ", end = '')
             print(cur_cryptos, end = '')
-            print("' crypto ~\n")
+            print(" crypto ~\n")
 
         else:
             print("I don't have the capacity to deal with more than 2 cryptos right now")
