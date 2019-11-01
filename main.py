@@ -18,6 +18,6 @@ while True:
         print("off topic")
     else:
         # print(input)
-        # print(parsed)
-        # print(cryptos)
+        print(parsed_query)
+        print(cryptos)
         print(function_call)
