@@ -20,6 +20,7 @@ def find_cur_crypto(words):
     if len(cur_cryptos) == 0:
         cur_cryptos.append("null")
 
+    file.close()
     # returns list of all cryptos mentioned in the input
     return cur_cryptos;
 
@@ -30,10 +31,12 @@ def find_question(words):
     # creates list of all 'price question' indicators from price_words.txt
     file = open("price_words.txt" , "r")
     price_words = [item.strip() for item in file.readlines()]
+    file.close()
 
     # creates list of all 'compare question' indicators from compare_words.txt
     file = open("compare_words.txt", "r")
     compare_words = [item.strip() for item in file.readlines()]
+    file.close()
 
     # assigns question to 'price' if a price indicator is found
     for word in words:

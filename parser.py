@@ -20,6 +20,7 @@ def parse(input):
 
     parsedd = list2string(parsed_input)
 
+    file.close()
     return [parsedd, crypto_list]
 
 
