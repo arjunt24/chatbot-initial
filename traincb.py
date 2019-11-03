@@ -21,3 +21,5 @@ while i < len(data):
         data[i+1]
     ])
     i += 3
+
+file.close()

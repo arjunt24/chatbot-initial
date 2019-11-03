@@ -7,6 +7,9 @@ price crypto0
 what is the current value of crypto0?
 price crypto0
 
+how much does crypto0 cost?
+price crypto0
+
 what is crypto0?
 about crypto0
 
@@ -16,7 +19,43 @@ about crypto0
 crypto0
 about crypto0
 
+give me information on crypto0
+about crypto0
+
+educate me on crypto0
+about crypto0
+
+can you introduce crypto0?
+about crypto0
+
+what is the background of crypto0?
+about crypto0
+
+crypto0 history
+about crypto0
+
+give me details on crypto0?
+about crypto0
+
+facts on crypto0
+about crypto0
+
+how was crypto0 established?
+about crypto0
+
 compare crypto0 and crypto1
+compare crypto0 crypto1
+
+what is the difference between crypto0 and crypto1?
+compare crypto0 crypto1
+
+how are crypto0 and crypto1 different?
+compare crypto0 crypto1
+
+is crypto0 better than crypto1?
+compare crypto0 crypto1
+
+is crypto0 worse than crypto1?
 compare crypto0 crypto1
 
 what is cryptocurrency?
@@ -25,3 +64,20 @@ cryptointro
 what is crypto
 cryptointro
 // if user asks something generic, not about a specific crypto
+what is the all-time high of crypto0?
+stats crypto0
+
+what is the market cap of crypto0?
+stats crypto0
+
+what is the market capitalization of crypto0?
+stats crypto0
+
+what is the return from crypto0?
+stats crypto0
+
+what is the circulating supply of crypto0?
+stats crypto0
+
+what is the 24 hr volume ranking of crypto0?
+stats crypto0
